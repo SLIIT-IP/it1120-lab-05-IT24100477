@@ -26,7 +26,8 @@ public class IT24100477Lab5Q1 {
  if (num3 > largest) {
   largest = num3;
  }
- 
+
+ System.out.println(" ");
  System.out.println("User enter numbers are : " +num1+" "+num2+" "+num3);
  System.out.println("The smallest number is : " +smallest);
  System.out.println("The largest number is : " +largest);
