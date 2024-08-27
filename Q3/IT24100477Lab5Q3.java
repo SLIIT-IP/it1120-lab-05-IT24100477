@@ -29,17 +29,16 @@ public class IT24100477Lab5Q3 {
         double totalCost = numberOfDaysReserved * ROOM_CHARGE_PER_DAY;
 
         double discount = 0.0;
-        if (numberOfDaysReserved > 3) {
-            if (numberOfDaysReserved <= 4) {
-                discount = DISCOUNT_3_TO_4_DAYS;
-            } else {
-                discount = DISCOUNT_5_OR_MORE_DAYS;
-            }
-        }
+        if(numberOfDaysReserved ==3 || numberOfDaysReserved == 4)
+        { discount = DISCOUNT_3_TO_4_DAYS;
+        } 
 
-        if (discount > 0.0) {
-            totalCost -= totalCost * discount;
+        if(numberOfDaysReserved >= 5)
+        { discount = DISCOUNT_5_OR_MORE_DAYS;
         }
+        
+        totalCost = totalCost-(totalCost*discount);
+       
         System.out.println("Room charge per day: " + ROOM_CHARGE_PER_DAY);
         System.out.println("Number of days reserved: " + numberOfDaysReserved);
         System.out.println("Total amount to be paid: "+totalCost);
