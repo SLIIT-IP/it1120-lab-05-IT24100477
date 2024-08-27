@@ -3,8 +3,10 @@ import java.util.Scanner;
 public class IT24100477Lab5Q2 {
  public static void main (String[] args) {
  Scanner input = new Scanner(System.in);
- int newMembers = input.nextInt();
+ int newMembers = -1;
  System.out.print("enter the number of new members introduced: ");
+ newMembers = input.nextInt();
+
 
  if (newMembers < 0) {
   System.out.println("input must be a number 0 or greater");
@@ -23,8 +25,8 @@ public class IT24100477Lab5Q2 {
       break;
     default: System.out.print("prize is a: Headphone");
       break;
-   }
   }
+ }
  }
 }
    
